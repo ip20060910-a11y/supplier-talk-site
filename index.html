@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Supplier Talk — 44 English–Chinese Email Templates for Talking to Chinese Suppliers</title>
 <meta name="description" content="Supplier Talk is a bilingual English–Chinese email template pack (PDF, 101 pages) for overseas buyers who source from Chinese factories. USD 17, one-time payment, instant download.">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#0e0e11">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Supplier Talk">
 <style>
   :root { --bg:#0e0e11; --card:#17171c; --line:#26262e; --text:#f2f2f4; --muted:#a7a7b3; --accent:#b79cff; --accent-dark:#2a2140; }
   * { margin:0; padding:0; box-sizing:border-box; }
@@ -150,5 +156,12 @@
 </footer>
 
 </div>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/sw.js').catch(function () {});
+  });
+}
+</script>
 </body>
 </html>
